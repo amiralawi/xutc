@@ -60,7 +60,7 @@ typedef struct xutThreadPoolWorker{
 
 xutThreadPool* xutThreadPool_init(int nworkers);
 void xutThreadPool_destroy(xutThreadPool *pool);
-int xutThreadPool_queueJob(xutThreadPool *pool, xutTaskPtr taskptr, void *dataptr);
+intHandle xutThreadPool_queueJob(xutThreadPool *pool, xutTaskPtr taskptr, void *dataptr);
 int xutThreadPool_waitAll(xutThreadPool *pool);
 int xutThreadPool_launch(xutThreadPool *pool);
 
